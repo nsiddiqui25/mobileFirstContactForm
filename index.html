@@ -4,17 +4,17 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Mobile Responsive CSS Grid - Contact Form</title>
+   <title>WebPoint360 - Contact Us</title>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="container">
-      <h1 class="brand"><span>POS</span> Contact Form</h1>
+      <h1 class="brand">WebPoint<span>360</span></h1>
       <div class="wrapper animated bounceInLeft">
          <div class="company-info">
-            <h3>Point Of Solutions</h3>
+            <h3>WebPoint360</h3>
             <ul>
                <li><i class="fa fa-road"></i> 44 Something St</li>
                <li><i class="fa fa-phone"></i> 555-555-5555</li>
@@ -23,33 +23,36 @@
          </div>
          <div class="contact">
             <h3>Email Us</h3>
-            <form action="">
+            <div class="alert">Your message has been sent.</div>
+            <form id="contactForm">
                <p>
                   <label for="">Name</label>
-                  <input type="text" name="name">
+                  <input type="text" name="name" id="name" required>
                </p>
                <p>
                   <label for="">Company</label>
-                  <input type="text" name="company">
+                  <input type="text" name="company" id="company">
                </p>
                <p>
                   <label for="">Email Address</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email" id="email" required>
                </p>
                <p>
                   <label for="">Phone Number</label>
-                  <input type="text" name="phone">
+                  <input type="text" name="phone" id="phone">
                </p>
                <p class="full">
                   <label for="">Message</label>
-                  <textarea name="message" rows="5"></textarea>
+                  <textarea name="message" rows="5" id="message"></textarea>
                </p>
                <p class="full">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                </p>
             </form>
          </div>
       </div>
    </div>
+   <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
